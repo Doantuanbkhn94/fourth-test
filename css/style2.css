@@ -1,0 +1,263 @@
+:root{
+    --scroll-color:#2F59DC;
+    --blue:#2F59DC;
+    --padding:#fff9;
+    --yellow:#e0e051;
+}
+
+.navbar ul li span{
+    margin-right: 1rem;
+}
+
+.navbar ul li i{
+    font-size: 1.8rem;
+    margin: auto 0;
+    margin-left: 1rem;
+}
+
+/* ------------------image-box starts----------------- */
+/* #image-box{
+    min-height: 100vh;
+} */
+.image-box .imgbox {
+    display: grid;
+    margin-top: 2rem;
+    padding: 0 2rem;
+    /* grid-template-columns: repeat(6, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(6, 1fr));
+    grid-template-rows: 20rem 20rem 30rem 40rem;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    grid-template-areas: 
+    
+    "box1 box1 box2 box3 box4 box4"
+    "box1 box1 box5 box5 box4 box4"
+    "box1 box1 box7 box6 box6 box6"
+    "box8 box8 box8 box9 box10 box10"   
+    ;
+    grid-gap:2rem;
+  }
+
+.image-box .imgbox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: 0.4s linear;
+  }
+ 
+  .image-box .imgbox img:hover{
+    transform: scale(1.03);
+  }
+
+ .image-box .imgbox .box1{
+    grid-area: box1;
+}
+
+.image-box .imgbox .box2{
+    grid-area: box2;
+}
+
+.image-box .imgbox .box3{
+    grid-area: box3;
+}
+
+.image-box .imgbox .box4{
+    grid-area: box4;
+}
+
+.image-box .imgbox .box5{
+    grid-area: box5;
+}
+
+.image-box .imgbox .box6{
+    grid-area: box6;
+}
+
+.image-box .imgbox .box7{
+    grid-area: box7;
+}
+
+.image-box .imgbox .box8{
+    grid-area: box8;
+}
+
+.image-box .imgbox .box9{
+    grid-area: box9;
+}
+
+.image-box .imgbox .box10{
+    grid-area: box10;
+}
+
+/* ------------------image-box ends---------------- */
+
+
+.write-box .container{
+    color: #fff;
+}
+
+
+
+
+
+
+.invest-box .container{
+    display: flex;
+    align-content: center;
+    margin: 0 2rem;
+    padding-top: 3rem;
+    /* padding: 3rem 1rem; */
+    /* align-items: center; */
+    
+}
+
+.invest-box .container .singing{
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    font-size: 2.5rem;
+    color: #fff;
+   }
+
+.invest-box .container .podcast{
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    font-size: 2.5rem;
+    color: #fff;
+    border-left: 0.3rem solid #fff4;
+}
+
+.invest-box .container h3{
+    height: 5rem;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.invest-box .container i{
+    color: var(--yellow);
+    font-size: 3rem;
+}
+
+.invest-box .container{
+    margin-bottom: 2rem;
+}
+
+.invest-box .container span{
+    margin-bottom: 1rem;
+}
+
+.invest-box .container audio{
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------visited----------------- */
+.contact .row .content .counter-box{
+    text-align: center;
+    padding-top: 1rem;
+    width: 14rem;
+    height: 10rem;
+    margin-top: 4rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-style: bold;
+    font-weight: 600;
+    background:#3333;
+    color: #eee;
+    border: 0.2rem solid rgba(255, 255, 255, 0.432);
+
+}
+
+.contact .row .content .counter-box .fist-line{
+    color: var(--yellow);
+    font-size: 2rem;
+}
+
+/* ----------------------------------------------- */
+@media (max-width:768px){
+    .invest-box .container .singing{
+        margin: 0;
+        align-content: center;
+    }
+
+    .invest-box .container .podcast{
+        margin: 0;
+        align-content: center;
+
+            
+}
+
+
+
+
+@media (max-width:400px){
+    .imgbox{
+        margin: 0 auto;
+    }
+    .image-box .imgbox {
+        display: grid;
+        /* grid-template-columns: repeat(6, 1fr); */
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 20rem 10rem 10rem 10rem 15rem 10rem 10rem;
+        /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+        grid-template-areas: 
+        "box1 box1"
+        "box2 box3"
+        "box4 box5"
+        "box4 box7"
+        "box6 box6"
+        "box9 box8"
+        "box10 box8"
+       ;
+       grid-gap:1.5rem;
+      }
+
+      .invest-box .container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex-wrap: none;
+          
+      }
+
+      .invest-box .container .singing{
+          width: 100%;
+          align-content: center;
+          /* text-align: center; */
+      }
+
+      .invest-box .container .podcast{
+        width: 100%;
+        align-content: center;
+        /* text-align: center; */
+    }
+
+      .invest-box .container span{
+          font-size: 2rem;
+  
+      }
+
+    }
+}
+
